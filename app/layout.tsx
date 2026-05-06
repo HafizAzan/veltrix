@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Syne, DM_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/layout/header";
-import Footer from "@/components/layout/footer";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -38,11 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${syne.variable} ${dmSans.variable} ${jetbrainsMono.variable}`}>
-      <body className="flex min-h-full flex-col">
-        <Header />
-        {children}
-        <Footer />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
