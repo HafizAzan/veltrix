@@ -1,24 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  /* Backgrounds */
   --color-bg-primary: #242627;
   --color-bg-secondary: #161b22;
   --color-bg-accent: #00c896;
   --color-bg-light: #f5f5f0;
   --color-bg-white: #ffffff;
 
-  /* Brand */
   --color-accent-primary: #00c896;
   --color-accent-hover: #00a07a;
 
-  /* Text */
   --color-text-primary: #ffffff;
   --color-text-secondary: rgba(255, 255, 255, 0.55);
   --color-text-dark: #0d1117;
   --color-text-muted: rgba(255, 255, 255, 0.3);
 
-  /* Navigation */
   --color-nav-bg: #0d1117;
   --color-nav-border: rgba(255, 255, 255, 0.08);
   --color-nav-link: rgba(255, 255, 255, 0.6);
@@ -26,12 +22,10 @@
   --color-nav-cta-bg: #00c896;
   --color-nav-cta-text: #0d1117;
 
-  /* Borders */
   --color-border-subtle: rgba(255, 255, 255, 0.08);
   --color-border-medium: rgba(255, 255, 255, 0.15);
   --color-border-accent: #00c896;
 
-  /* Sections */
   --color-section-dark: #0d1117;
   --color-section-card: #161b22;
   --color-section-light: #f5f5f0;

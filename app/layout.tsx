@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Syne, DM_Sans, JetBrains_Mono } from "next/font/google";
+import { Roboto, DM_Sans, Inter } from "next/font/google";
 import "./globals.css";
 
-const syne = Syne({
+const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["400", "600", "700", "800"],
+  weight: ["400", "500", "700", "900"],
   variable: "--font-heading",
   display: "swap",
 });
@@ -17,9 +17,9 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
-const jetbrainsMono = JetBrains_Mono({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-mono",
   display: "swap",
 });
@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${syne.variable} ${dmSans.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className={`${roboto.variable} ${dmSans.variable} ${inter.variable}`}>
       <body>{children}</body>
     </html>
   );

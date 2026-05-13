@@ -15,18 +15,6 @@ const NotFound = () => {
       </div>
 
       <section className="relative z-10 mx-auto flex w-full max-w-3xl flex-col items-center rounded-[28px] border border-border-subtle bg-[color-mix(in_srgb,var(--color-bg-primary)_72%,transparent)] px-6 py-10 text-center shadow-[0_0_80px_color-mix(in_srgb,var(--color-accent-primary)_12%,transparent)] backdrop-blur-md sm:px-12 sm:py-12">
-        {/* <svg
-          className="mb-6 size-12 animate-[pulse-glow_2s_ease-in-out_infinite_alternate] text-accent-primary"
-          width="48"
-          height="48"
-          viewBox="0 0 48 48"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden
-        >
-          <path d="M8 10L24 38L40 10H32L24 24L16 10H8Z" fill="currentColor" />
-        </svg> */}
-
         <Image src={RESOURCES.VELTRIX_LOGO_SMALL} alt="Veltrix Software" width={100} height={100} />
 
         <span className="animate-[fade-up_0.6s_ease-out_0.1s_both] rounded-full border border-accent-primary/25 bg-accent-primary/10 px-4 py-2 font-body text-xs font-medium uppercase tracking-widest text-accent-primary">

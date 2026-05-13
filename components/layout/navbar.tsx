@@ -1,28 +1,43 @@
 "use client";
+
 import React from "react";
 import Link from "next/link";
-import { NAV_LINKS } from "@/lib/constants";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import type { NavLink } from "@/lib/site-config";
 
-const Navbar = ({ className }: { className?: string }) => {
+export type NavbarProps = {
+  links: NavLink[];
+  className?: string;
+  uppercase?: boolean;
+};
+
+const Navbar = ({ links, className, uppercase = true }: NavbarProps) => {
   const pathname = usePathname();
   const isActive = (href: string) => pathname === href;
 
   return (
-    <nav className={cn(className)}>
-      <ul className="flex items-center gap-x-8">
-        {NAV_LINKS?.map((item) => (
+    <nav className={cn(className)} aria-label="Primary">
+      <ul className="flex flex-col gap-1 md:flex-row md:items-center md:gap-x-8">
+        {links.map((item) => (
           <li key={item.href} className="group">
             <Link
               href={item.href}
-              className={cn("text-nav-link hover:text-nav-link-hover transition-colors duration-300", isActive(item.href) && "text-nav-link-hover")}
+              className={cn(
+                "text-nav-link hover:text-nav-link-hover font-body text-sm tracking-wide transition-colors duration-300",
+                uppercase && "uppercase",
+                isActive(item.href) && "text-nav-link-hover",
+              )}
             >
               {item.label}
             </Link>
 
             <div
-              className={cn("h-px w-0 bg-white group-hover:w-full transition-all duration-300", isActive(item.href) && "w-full bg-nav-link-hover")}
+              className={cn(
+                "mt-0.5 hidden h-px w-0 bg-white md:block",
+                "group-hover:w-full group-hover:bg-nav-link-hover transition-all duration-300",
+                isActive(item.href) && "w-full bg-nav-link-hover",
+              )}
             />
           </li>
         ))}
