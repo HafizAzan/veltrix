@@ -39,7 +39,7 @@ export const termsDisputeSteps = [
 ];
 
 export const termsContactBanner = {
-  email: "legal@veltrix.software",
+  email: "azanahmedkhan.dev@gmail.com",
   address: "Civil Lines, Karachi, Pakistan",
   response: "< 1 business day",
 };

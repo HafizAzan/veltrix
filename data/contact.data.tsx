@@ -45,8 +45,8 @@ export const contactReferralOptions = [
 ];
 
 export const contactSidebar = {
-  email: "hello@veltrix.software",
-  phone: "+92 333 711 1111",
+  email: "azanahmedkhan.dev@gmail.com",
+  phone: "+92 316 1122692",
   response: "Within 4 business hours",
   calendlyTitle: "Prefer a call?",
   calendlyCta: "Book on Calendly",

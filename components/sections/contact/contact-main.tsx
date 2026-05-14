@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Heading, Body, Small } from "@/components/ui/typography";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Select } from "@/components/ui/select";
+import { GsapSelect } from "@/components/ui/gsap-select";
 import { Checkbox } from "@/components/ui/checkbox";
 import Button from "@/components/ui/button";
 import { ContactSidebar } from "@/components/sections/contact/contact-sidebar";
@@ -31,9 +31,9 @@ export function ContactMain() {
           >
             <div className="grid gap-4 sm:grid-cols-2">
               <Input name="fullName" label="Full name" required placeholder="Jane Doe" />
-              <Input name="email" type="email" label="Email" required placeholder="you@company.com" />
+              <Input name="email" type="email" label="Email" required placeholder="azanahmedkhan.dev@gmail.com" />
               <Input name="company" label="Company" placeholder="Acme Inc." />
-              <Input name="phone" label="Phone" placeholder="+92 …" />
+              <Input name="phone" label="Phone" placeholder="+92 316 1122692" />
             </div>
             <div>
               <Small className="text-text-secondary mb-2 block tracking-wide uppercase">What services do you need?</Small>
@@ -58,7 +58,7 @@ export function ContactMain() {
               </div>
             </div>
             <Textarea name="message" label="Tell us about the project" required placeholder="Goals, timeline, constraints…" />
-            <Select name="referral" label="How did you find us?" options={contactReferralOptions} placeholder="Select one" />
+            <GsapSelect name="referral" label="How did you find us?" options={contactReferralOptions} placeholder="Select one" />
             <Checkbox name="nda" label="I would like to sign an NDA before sharing sensitive details." />
             <Button type="submit" size="lg" fullWidth>
               {status === "sent" ? "Thanks — we will reply soon" : "Send my project details →"}

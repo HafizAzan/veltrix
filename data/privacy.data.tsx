@@ -40,7 +40,7 @@ export const privacyRights = [
 ];
 
 export const privacyDpo = {
-  email: "privacy@veltrix.software",
+  email: "azanahmedkhan.dev@gmail.com",
   address: "Civil Lines, Karachi, Pakistan",
   response: "24–48 hours",
 };

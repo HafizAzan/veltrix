@@ -25,17 +25,11 @@ const Header = ({
   sticky = true,
 }: HeaderProps) => {
   return (
-    <header
-      className={cn(
-        "border-nav-border bg-nav-bg/90 w-full border-b backdrop-blur-md",
-        sticky && "sticky top-0 z-40",
-        className,
-      )}
-    >
+    <header className={cn("border-nav-border bg-nav-bg/90 w-full border-b backdrop-blur-md", sticky && "sticky top-0 z-40", className)}>
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4">
         <Link href={logoHref} className="shrink-0">
-          <Image src={logoFull} alt={logoAlt} width={200} height={48} className="h-10 w-auto max-[480px]:hidden" priority />
-          <Image src={logoSmall} alt={logoAlt} width={40} height={40} className="hidden h-10 w-10 max-[480px]:block" />
+          <Image src={logoFull} alt={logoAlt} width={200} height={48} className="h-10 w-auto max-[480px]:hidden mix-blend-difference" priority />
+          <Image src={logoSmall} alt={logoAlt} width={40} height={40} className="hidden h-10 w-10 max-[480px]:block mix-blend-difference" />
         </Link>
 
         <Navbar links={navLinks} className="hidden md:block" uppercase />

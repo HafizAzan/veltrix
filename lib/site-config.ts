@@ -87,7 +87,7 @@ export const defaultFooterConfig: SiteFooterConfig = {
     title: "Contact info",
     address: "Shadman Town, Karachi, Pakistan",
     email: "azanahmedkhan.dev@gmail.com",
-    phone: "+92 316 1122 692",
+    phone: "+92 316 1122692",
   },
   socialLinks: [
     { name: "Instagram", href: "https://instagram.com", platform: "instagram" },
